@@ -5,14 +5,24 @@
  */
 package again.reflection;
 
+import myannotation.AutoGenerate;
+import myannotation.Entity;
+import myannotation.MyId;
+
 /**
  *
  * @author nguye
  */
+@Entity(tableName = "customers")
 public class Customer {
 
+    @MyId
+    @AutoGenerate
     private int id;
     private String fullName;
+
+    public Customer() {
+    }
 
     public Customer(String fullName) {
         this.fullName = fullName;

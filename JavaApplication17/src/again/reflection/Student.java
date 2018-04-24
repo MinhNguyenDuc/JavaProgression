@@ -5,10 +5,15 @@
  */
 package again.reflection;
 
+import myannotation.MyId;
+import myannotation.AutoGenerate;
+import myannotation.Entity;
+
 /**
  *
  * @author nguye
  */
+@Entity(tableName = "students")
 public class Student {
 
     @MyId
@@ -41,9 +46,17 @@ public class Student {
         this.rollNumber = rollNumber;
     }
 
+    public Student() {
+    }
+
     public Student(String name, String rollNumber) {
         this.name = name;
         this.rollNumber = rollNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + id + ", name=" + name + ", rollNumber=" + rollNumber + '}';
     }
 
 }
