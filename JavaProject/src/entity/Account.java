@@ -45,7 +45,7 @@ public class Account {
     }
     
     public void withDraw(int total){
-        this.balance
+        
     }
     
     public void deposite(int total){
