@@ -1,0 +1,4 @@
+﻿Xây dựng 1 application gồm game server và game client (từ 2 trở lên).
+Sử dụng JavaNetworking và JavaFX để render game client.
+Khi client 1 di chuyển nhân vật hay có thao tác skill thì client 2 có update.
+Thông tin gửi từ client lên server phải là Object chứ không phải String.
