@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="start_btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opencvcameracapture.FXMLDocumentController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#startCamera" prefHeight="35.0" prefWidth="109.0" text="Start Camera" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <ImageView fx:id="currentFrame" fitHeight="519.0" fitWidth="841.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
