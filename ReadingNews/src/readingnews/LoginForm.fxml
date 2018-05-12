@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@../assert/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="readingnews.FXMLDocumentController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/logo.png" />
+               </image>
+            </ImageView>
+            <Label text="Welcome to" textFill="#f5eeee">
+               <font>
+                  <Font name="Ubuntu" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="sElection" textFill="#f5eeee">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="content_area" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFF;" styleClass="loginBtn">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="111.0" text="Welcome back," textFill="#5e5555">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="141.0" text="Sign in to conitnue" textFill="#b9afaf">
+               <font>
+                  <Font name="Ubuntu" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="273.0" prefHeight="30.0" prefWidth="82.0" text="Username">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="337.0" prefHeight="30.0" prefWidth="87.0" text="Password">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="149.0" layoutY="273.0" prefHeight="30.0" prefWidth="196.0" />
+            <PasswordField fx:id="passwordField" layoutX="149.0" layoutY="336.0" prefHeight="30.0" prefWidth="196.0" />
+            <Label layoutX="221.0" layoutY="369.0" styleClass="forgetText" text="Forget password ?" textFill="#7c7878">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button fx:id="loginBtn" layoutX="38.0" layoutY="436.0" mnemonicParsing="false" onAction="#getLoginInfo" prefHeight="45.0" prefWidth="328.0" styleClass="loginBtn" text="Login" textFill="#615b5b">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="134.0" layoutY="516.0" text="New User ?" textFill="#7f7979">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="registerLabel" layoutX="221.0" layoutY="515.0" onMouseClicked="#openRegisterFrom" styleClass="signUpText" text="Sign up" textFill="#785ef9">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

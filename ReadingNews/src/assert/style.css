@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 11, 2018, 6:20:39 PM
+    Author     : minhnguyen
+*/
+.sidebar {
+    -fx-background-color: rgb(120, 94, 249);
+}
+
+.forgetText:hover {
+    -fx-underline: true;
+    -fx-text-fill: rgb(57, 57, 58);
+}
+
+.loginBtn {
+    -fx-background-color: rgb(120, 94, 249);
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 5px;
+}
+
+.loginBtn:hover {
+    -fx-background-radius: 5px;
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(120, 94, 249);
+    -fx-border-color: rgb(120, 94, 249);
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+}
