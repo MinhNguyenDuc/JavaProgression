@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="main" stylesheets="@readingnew.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="readingnewswithview.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <VBox prefHeight="500.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ninja_4.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="50.0" right="20.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="labelLogo" alignment="CENTER" prefHeight="17.0" prefWidth="303.0" text="Ninjava" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="formContent" layoutX="300.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="52.0" layoutY="69.0" prefHeight="17.0" prefWidth="82.0" text="Username" />
+            <TextField fx:id="txtUsername" layoutX="148.0" layoutY="64.0" prefHeight="27.0" prefWidth="194.0" />
+            <TextField fx:id="txtEmail" layoutX="148.0" layoutY="105.0" prefHeight="27.0" prefWidth="194.0" />
+            <Label layoutX="52.0" layoutY="110.0" prefHeight="17.0" prefWidth="82.0" text="Email" />
+            <Label layoutX="52.0" layoutY="146.0" prefHeight="17.0" prefWidth="82.0" text="Password" />
+            <PasswordField fx:id="txtPassword" layoutX="148.0" layoutY="141.0" prefHeight="27.0" prefWidth="194.0" />
+            <Button fx:id="btnSubmit" layoutX="148.0" layoutY="196.0" mnemonicParsing="false" onAction="#doSubmit" prefHeight="27.0" prefWidth="69.0" text="Submit" />
+            <Button fx:id="btnReset" layoutX="236.0" layoutY="196.0" mnemonicParsing="false" text="Reset" />
+            <Label fx:id="lblLogin" layoutX="148.0" layoutY="250.0" onMouseClicked="#openLogin" text="Login" textFill="#6097eb" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
+
